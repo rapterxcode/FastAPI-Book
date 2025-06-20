@@ -164,6 +164,7 @@ def health_check():
     return {
         "status": "healthy" if db_status == "Connected" else "unhealthy",
         "server": {
+            "Deverlop by": "Phone",
             "status": "Running",
             "timestamp": datetime.now().isoformat(),
             "framework": "FastAPI",
